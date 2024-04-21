@@ -1,10 +1,10 @@
-package com.amigoscode.springbootexample;
+package com.abhigyan.springdatamongodb;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringBootExampleApplicationTests {
+class SpringDataMongodbApplicationTests {
 
 	@Test
 	void contextLoads() {

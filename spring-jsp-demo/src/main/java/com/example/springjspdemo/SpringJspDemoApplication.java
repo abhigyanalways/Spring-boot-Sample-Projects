@@ -9,6 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
 public class SpringJspDemoApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(SpringJspDemoApplication.class, args);
 	}
 
