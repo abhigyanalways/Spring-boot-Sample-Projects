@@ -1,5 +1,6 @@
 package com.MovieReviewProject.MovieAPI;
 
+import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -27,4 +28,16 @@ public class MovieController {
     public ResponseEntity<Optional<Movie>> getSingleMovie(@PathVariable("imdbId") String imdbId){
         return new ResponseEntity<>(movieService.singleMovie(imdbId),HttpStatus.OK);
     }
+
+    @GetMapping("/find/{title}")
+    public ResponseEntity<Optional<Movie>> findMovieByTitle(@PathVariable String title){
+        return new ResponseEntity<>(movieService.movieByTitle(title),HttpStatus.OK);
+
+    }
+
+
+
+
+
+
 }
